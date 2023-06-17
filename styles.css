@@ -14,13 +14,11 @@ html, body {
 .main {
     width: 75dvw;
     max-width: 850px;
-    height: 100dvh;
+    min-height: 100dvh;
     padding: 1.5em;
     margin: auto;
     background-color: #F0F6F6;
     color: #282828;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 #bio {
@@ -38,7 +36,8 @@ html, body {
 @media screen and (max-width: 768px) {
     .main {
         width: 100dvw;
-        height: auto;
+        /* height: auto; */
+        /* min-height: 100dvh; */
     }
     
     #bio {
