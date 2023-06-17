@@ -5,77 +5,106 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="email.js"></script>
 
     <title>Ethan Mook</title>
   </head>
   <body>
-    <div class="container p-3">
-      <div id="bio-row" class="row">
-        <div id="bio-desc" class="col">
-      	  <h2>Ethan Mook </h2>
-      	  Email: mook [dot] e [at] northeastern [dot] edu
-      	  <br>
-          I am a second year PhD student at Northeastern University
-          where I am advised by
-          <a href="https://www.ccs.neu.edu/home/wichs/">
-            Daniel Wichs
-          </a>.
-          <br>
-          I am broadly interested in theoretical cryptography. Most
-          recently, I have been interested in proof systems, private
-          information retrieval and post-quantum cryptography.
+    <div class="main">
+      <div id="bio">
+        <div id="bio-desc">
+      	  <h1>Ethan Mook</h1>
+          <p>
+            I am a second year PhD student at Northeastern University
+            where I am advised by
+            <a href="https://www.ccs.neu.edu/home/wichs/">Daniel
+            Wichs</a>. Before that, I was an undergraduate student at
+            the University of Michigan.
+          <p>
+            I am broadly interested in theoretical cryptography. Most
+            recently, I have been interested in proof systems, private
+            information retrieval and post-quantum cryptography.
+      	  <p>
+      	    <strong>Email:</strong>
+            <span id="email">
+              mook [dot] e [at] northeastern [dot] edu
+            </span>
         </div>
-        <div id="bio-image" class="col">
+        
+        <div id="bio-image">
           <img src="images/me.jpg" width="100%" height="auto">
         </div>
+        
       </div>
       <hr>
-      <div class="row mt-3">
-        <div class="col">
-          <h5>Preprints</h5>
-          <ul>
-            <li>
-              Doubly Efficient Private Information Retrieval and Fully
-              Homomorphic RAM Computation from Ring LWE
-              <br>
-              Wei-Kai Lin, Ethan Mook, and Daniel Wichs
-              <br>
-              [<a href="https://eprint.iacr.org/2022/1703" target="_blank">eprint</a>]
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col">
-          <h5>Publications</h5>
-          <ul>
-            <li>
+      <!-- <div class="paper-list"> -->
+      <!--   <h2>Preprints</h2> -->
+      <!--   <ul> -->
+      <!--   </ul> -->
+      <!-- </div> -->
+      <div class="paper-list">
+        <h2>Publications</h2>
+        <ul>
+          <li>
+            <span class="paper-title">
+              Doubly Efficient Private Information Retrieval and
+              Fully Homomorphic RAM Computation from Ring LWE
+            </span>
+            <br>
+            <span class="author-list">
+              <a href="https://weikailin.github.io">Wei-Kai Lin</a>,
+              Ethan Mook, and
+              <a href="https://www.ccs.neu.edu/home/wichs/">Daniel Wichs</a>
+            </span>
+            <br>
+            <span class="conference">
+              <a href="http://acm-stoc.org/stoc2023/">STOC 2023</a>
+            </span>
+            <span class="attention">(Best paper award)</span>
+            <br>
+            [<a href="https://eprint.iacr.org/2022/1703" target="_blank">eprint</a>]
+          </li>
+          <li>
+            <span class="paper-title">
               Post-Quantum Insecurity from LWE
-              <br>
-              Alex Lombardi, Ethan Mook, Willy Quach, and Daniel Wichs
-              <br>
-              TCC 2022
-              <br>
-              [<a href="https://eprint.iacr.org/2022/869" target="_blank">eprint</a>]
-              [<a href="slides/pq_insecurity.pdf" target="_blank">slides</a>]
-              [<a href="https://youtu.be/dRRl6vGIIh8?t=488" target="_blank">talk</a>]
-            </li>
-		    <li>
+            </span>
+            <br>
+            <span class="author-list">
+              <a href="https://sites.google.com/view/alex-lombardi/home">Alex Lombardi</a>,
+              Ethan Mook,
+              <a href="https://ccs.neu.edu/~wquach/">Willy Quach</a>, and
+              <a href="https://www.ccs.neu.edu/home/wichs/">Daniel Wichs</a>
+            </span>
+            <br>
+            <span class="conference">
+              <a href="https://tcc.iacr.org/2022/">TCC 2022</a>
+            </span>
+            <br>
+            [<a href="https://eprint.iacr.org/2022/869" target="_blank">eprint</a>]
+            [<a href="slides/pq_insecurity.pdf" target="_blank">slides</a>]
+            [<a href="https://youtu.be/dRRl6vGIIh8?t=488" target="_blank">talk</a>]
+          </li>
+		  <li>
+            <span class="paper-title">
               Lattice (List) Decoding Near Minkowski's Inequality
-		      <br>
-              Ethan Mook, Chris Peikert
-		      <br>
+            </span>
+		    <br>
+            <span class="author-list">
+              Ethan Mook and
+              <a href="https://web.eecs.umich.edu/~cpeikert/">Chris Peikert</a>
+            </span>
+		    <br>
+            <span class="conference">
               IEEE Transactions on Information Theory, 68(2):863-870
-		      <br>
-		      [<a href="https://arxiv.org/abs/2010.04809" target="_blank">arXiv</a>]
-		    </li>
-          </ul>
-        </div>
+            </span>
+		    <br>
+		    [<a href="https://arxiv.org/abs/2010.04809" target="_blank">arxiv</a>]
+		  </li>
+        </ul>
       </div>
+    </div>
   </body>
 </html>
